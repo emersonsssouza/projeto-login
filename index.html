@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/geral.css">
     <link rel="stylesheet" href="estilos/media-query.css">
     <title>Login</title>
@@ -27,22 +28,20 @@
                 <form action="index.php" method="get">
 
                     <div class="email" id="iemail">
-                        <label for=""><img src="imagens/e-mail-novo.png" alt="e-mail" id="iemail" width="30"></label>
-                        <input type="email" name="iemail" id="iemail" placeholder="Digite seu e-mail">
+                        <i class="material-icons">person</i>
+                        <input type="email" name="iemail" id="iemail" placeholder="Digite seu e-mail" autocomplete="email" required maxlength="30">
+                        <label for="">Email</label>
                     </div>
 
                     <div class="senha" id="isenha">
-                        <label for=""><img src="imagens/passworld-novo.png" alt="password" width="30"></label>
-                        <input type="password" name="isenha" id="isenha" placeholder="Digite sua senha" pattern="[1-9 a-z] {8,}" title="Sua senha deve conter 8 ou mais caracteres">
+                        <i class="material-icons">key</i>
+                        <input type="password" name="isenha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" pattern="[1-9 a-z] {8,}" title="Sua senha deve conter 8 ou mais caracteres" required minlength="5" maxlength="20">
+                        <label for="">Senha</label>
                     </div>
 
-                    <div class="enviar">
-                        <input type="submit" value="Enviar">
-                    </div>
-
-                    <div class="esqueci-senha">
-                        <input type="button" value="Esqueci a senha" alt="esqueci minha senha">
-                    </div>
+                        <input type="submit" value="Entrar">
+                        <a href="esqueci.html">esqueci minha senha</a><i class="material-icons">mail</i>
+                    
                 </form>
             </div>
         </section>
