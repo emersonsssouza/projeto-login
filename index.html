@@ -27,20 +27,21 @@
 
                 <form action="index.php" method="get">
 
-                    <div class="email" id="iemail">
-                        <i class="material-icons">person</i>
-                        <input type="email" name="iemail" id="iemail" placeholder="Digite seu e-mail" autocomplete="email" required maxlength="30">
-                        <label for="">Email</label>
-                    </div>
-
-                    <div class="senha" id="isenha">
-                        <i class="material-icons">key</i>
-                        <input type="password" name="isenha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" pattern="[1-9 a-z] {8,}" title="Sua senha deve conter 8 ou mais caracteres" required minlength="5" maxlength="20">
-                        <label for="">Senha</label>
-                    </div>
+                    
+                        <div class="email" >
+                            <i class="material-icons">person</i>
+                            <input type="email" name="iemail" id="iemail" placeholder="Digite seu e-mail" autocomplete="email" required maxlength="30">
+                            <label for="iemail">Email</label>
+                        </div>
+                        <div class="senha" >
+                            <i class="material-icons">key</i>
+                            <input type="password" name="isenha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" pattern="[1-9 a-z] {8,}" title="Sua senha deve conter 8 ou mais caracteres" required minlength="5" maxlength="20">
+                            <label for="isenha">Senha</label>
+                        </div>
+                    
 
                         <input type="submit" value="Entrar">
-                        <a href="esqueci.html">esqueci minha senha</a><i class="material-icons">mail</i>
+                        <a href="esqueci.html" class="botao">esqueci minha senha<i class="material-icons">mail</i></a>
                     
                 </form>
             </div>
